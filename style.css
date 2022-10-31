@@ -2,13 +2,17 @@ body {
     margin: 0px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background:#9CA3DB;
+    background:#f7af9d;
     overflow: auto;
+}
+
+h1, h2, h3, nav {
+    color: #ad5454;
 }
 
 .navbar{
     overflow: hidden;
-    background-color: #9D5C63;
+    background-color: #2b2d42;
     margin-bottom: 10px;
 }
 
@@ -37,13 +41,13 @@ body {
 }
 
 .navbar a:hover .dropdown:hover .dropbtn{
-    background-color: #49111C;
+    background-color: #B0D0D3;
 }
 
 .dropdown-content{
     display: none;
     position: absolute;
-    background-color: #9D5C63;
+    background-color: #2b2d42;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -59,9 +63,19 @@ body {
 }
 
 .dropdown-content a:hover{
-    background-color: #49111c;
+    background-color: #B0D0D3;
 }
 
 .dropdown:hover .dropdown-content{
     display: block;
+}
+
+#title {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+    background:#f7e3af;
+    border: 10px solid #c08497;
+    border-radius: 24px;
 }
