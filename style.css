@@ -2,21 +2,21 @@ body {
     margin: 0px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background:#f6f4d2;
+    background:#f6f2ff;
     overflow: auto;
 }
 
 h1, h3, nav {
-    color: #a44a3f;
+    color: #2c2b28;
 }
 
 h2{
- color: #75485e;
+    color: #f6f2ff;
 }
 
 .navbar{
     overflow: hidden;
-    background-color: #a44a3f;
+    background-color: #351431;
     margin-bottom: 10px;
 }
 
@@ -45,13 +45,13 @@ h2{
 }
 
 .navbar a:hover .dropdown:hover .dropbtn{
-    background-color: #75485e;
+    background-color: #a36d90;
 }
 
 .dropdown-content{
     display: none;
     position: absolute;
-    background-color: #a44a3f;
+    background-color: #351431;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -67,7 +67,7 @@ h2{
 }
 
 .dropdown-content a:hover{
-    background-color: #75485e;
+    background-color: #a36d90;
 }
 
 .dropdown:hover .dropdown-content{
@@ -79,28 +79,65 @@ h2{
     margin-left: auto;
     margin-right: auto;
     padding: 4px;
-    background:#cbdfbd;
-    border-bottom: 6px solid #a44a3f;
+    background:#ffd275;
+    border-bottom: 6px solid #351431;
     border-radius: 24px;
 }
 
-#onThisPage{
-    width: 600px;
+.containerbig{
+    width: 700px;
     margin-left: auto;
     margin-right: auto;
-    background: #cbdfbd;
-    border-bottom: 6px solid #a44a3f;
+    background: #9c6615;
+    border-bottom: 6px solid #351431;
     border-radius: 24px;
 }
 
 .container{
-    width: 550px;
+    width: 600px;
     margin-left: auto;
     margin-right: auto;
-    background: #d4e09b;
-    border-bottom: 6px solid #f6f4d2;
+    background: #ffd275;
+    border-bottom: 6px solid #351431;
     border-radius: 24px;
     padding-left: 2px;
     padding-right: 2px;
     margin-bottom: 4px;
+}
+
+.form-control{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 24px;
+    background-color: #ffd275;
+}
+
+form{
+    height: 200px;
+    width: 400px;
+    background-color: #9c6615;
+    color: #f6f2ff;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border: 6px solid #ffd275;
+    border-radius: 24px;
+}
+
+#inputs{
+    margin: auto;
+    padding: 50px;
+}
+
+#yesno{
+    height: 30px;
+    width: 80px;
+    border-radius: 24px;
+    background-color: #351431;
+    color: #f6f2ff;
+}
+
+#yesno:hover{
+    background-color: #a36d90;
 }
