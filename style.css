@@ -124,7 +124,20 @@ li{
     margin-bottom: 4px;
 }
 
+.divider{
+    height: 50px;
+    width: 50px;
+    border: #351431 5px solid;
+    border-radius: 100%;
+    background: #a36d90;
+    color: #a36d90;
+    margin: 10px;
+}
 
+.groupdiv{
+    display: flex;
+    justify-content: center;
+}
 
 .form-control{
     padding: 5px;
