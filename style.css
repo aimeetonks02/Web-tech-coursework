@@ -175,3 +175,16 @@ form{
 #yesno:hover{
     background-color: #a36d90;
 }
+
+.view{
+    height: 30px;
+    width: 80px;
+    border-radius: 24px;
+    background-color: #351431;
+    color: #f6f2ff;
+    padding: 2px;
+}
+
+.view:hover{
+    background-color: #a36d90;
+}

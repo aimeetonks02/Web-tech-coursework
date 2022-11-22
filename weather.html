@@ -31,14 +31,29 @@
         </div>
 
         <h1>Longitude: <label id="lon"></label></h1>
+
+        <div class="container">
+            <h3>How would you like to view the graph?</h3>
+                <button class="view" onclick="changeType('line')">Line Graph</button>
+                <button class="view" onclick="changeType('bar')">Bar Chart</button>
+        </div>
+
         <canvas id="myChart"></canvas>
 
         <script>
-            //TODO: Task 1:
+          function changeType(chart){
+            window.location.reload();
+            if (chart=="line"){
+              lineGraph();
+            }
+            else{
+              barChart();
+            };
+          }
+
+          function barChart(){
             var daily = JSON.parse(dailydata_stoke);
             document.getElementById('lon').innerHTML = daily.coord.lon;
-          
-            //TODO: Task 2, 3 and 4
             var forecast = JSON.parse(forecast_stoke);
             this.dateList = forecast.list.map(list => {
               return list.dt_txt;
@@ -49,21 +64,56 @@
             });
           
             var ctx = document.getElementById('myChart').getContext('2d');
-            this.chart = new Chart(ctx, {
-              type: "line",
+            this.barchart = new Chart(ctx, {
+              type: "bar",
               data: {
                 labels: this.dateList,
                 datasets: [
                   {
                     label: "Temperature",
-                    backgroundColor: "lightblue",
-                    borderColor: "blue",
-                    fill: false,
+                    backgroundColor: "pink",
+                    borderColor: "black",
                     data: this.temperatureList
                   }
                 ]
-              }
-            })
+              },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }})}
+
+
+            function lineGraph(){
+              var daily = JSON.parse(dailydata_stoke);
+              document.getElementById('lon').innerHTML = daily.coord.lon;
+              var forecast = JSON.parse(forecast_stoke);
+              this.dateList = forecast.list.map(list => {
+                return list.dt_txt;
+              });
+
+              this.temperatureList = forecast.list.map(list => {
+                return list.main.temp;
+              });
+
+              var ctx = document.getElementById('myChart').getContext('2d');
+              this.chart = new Chart(ctx, {
+                type: "line",
+                data: {
+                  labels: this.dateList,
+                  datasets: [
+                    {
+                      label: "Temperature",
+                      backgroundColor: "pink",
+                      borderColor: "darkred",
+                      fill: false,
+                      data: this.temperatureList
+                    }
+                  ]
+                }
+              })}
           </script>
     </body>
 </html>
