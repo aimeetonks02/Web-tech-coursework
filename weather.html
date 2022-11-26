@@ -41,14 +41,22 @@
         <canvas id="myChart"></canvas>
 
         <script>
+          var linechart = null;
+          var barchart = null;
+          
           function changeType(chart){
-            window.location.reload();
-            if (chart=="line"){
-              lineGraph();
+            let chartStatus = Chart.getChart("myChart");
+            if (chartStatus != undefined){
+              chartStatus.destroy();
+            }
+
+            if (chart == "line"){
+              linechart = new lineGraph()
             }
             else{
-              barChart();
+              barchart = new barChart()  
             };
+            
           }
 
           function barChart(){
@@ -64,7 +72,7 @@
             });
           
             var ctx = document.getElementById('myChart').getContext('2d');
-            this.barchart = new Chart(ctx, {
+            barchart = new Chart(ctx, {
               type: "bar",
               data: {
                 labels: this.dateList,
@@ -83,7 +91,8 @@
                         beginAtZero: true
                     }
                 }
-            }})}
+            }})
+          return barchart;}
 
 
             function lineGraph(){
@@ -99,7 +108,7 @@
               });
 
               var ctx = document.getElementById('myChart').getContext('2d');
-              this.chart = new Chart(ctx, {
+              linechart = new Chart(ctx, {
                 type: "line",
                 data: {
                   labels: this.dateList,
@@ -113,7 +122,8 @@
                     }
                   ]
                 }
-              })}
+              })
+            return linechart;}
           </script>
     </body>
 </html>
