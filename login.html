@@ -3,9 +3,11 @@
     <head>
         <title>Web Tech Coursework</title>
         <link rel ="stylesheet" type="text/css" href="style.css">
+        <script src="login.php"></script>
+        <script src="logout.php"></script>
     </head>
 
-    <body>
+    <body onload="check()">
         <div class="navbar">
             <a href="homepage.html">Home</a>
             <div class="dropdown">
@@ -21,14 +23,28 @@
             <a style="float:right" href="#">Login</a>
         </div>
 
+        <script>
+            function check(){
+                var loggedIn = "<?php echo $_SESSION; ?>";
+                if (loggedIn == true){
+                    alert("You are already logged in.");
+                    return "homepage.html";
+                }
+                else{
+                    return "#";
+                }
+            }
+
+        </script>
+
         <div id="title">
             <h1>Administrator Login</h1>
         </div>
         <form method="post" action="login.php">
             <div id="inputs">
                 <div>
-                    <label for="idInput">Username</label>
-                    <input class="form-control" name="id" id="idInput" autofocus placeholder="Enter username here">
+                    <label for="username">Username</label>
+                    <input class="form-control" name="username" id="username" autofocus placeholder="Enter username here">
                 </div>
                 <div>
                     <label for="password">Password</label>
