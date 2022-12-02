@@ -37,7 +37,7 @@ var forecast='{
             "sys": {
                 "pod": "d"
             },
-            "dt_txt": "2021-09-27 12:00:00"
+            "dt_txt": "27th September 12pm"
         },
         {
             "dt": 1632754800,
@@ -73,7 +73,7 @@ var forecast='{
             "sys": {
                 "pod": "d"
             },
-            "dt_txt": "2021-09-27 15:00:00"
+            "dt_txt": "27th September 3pm"
         },
         {
             "dt": 1632765600,
@@ -109,7 +109,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-09-27 18:00:00"
+            "dt_txt": "27th September 6pm"
         },
         {
             "dt": 1632776400,
@@ -145,7 +145,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-09-27 21:00:00"
+            "dt_txt": "27th September 9pm"
         },
         {
             "dt": 1632787200,
@@ -181,7 +181,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-09-28 00:00:00"
+            "dt_txt": "28th September 12am"
         },
         {
             "dt": 1632798000,
@@ -217,7 +217,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-09-28 03:00:00"
+            "dt_txt": "28th September 3am"
         },
         {
             "dt": 1632808800,
@@ -253,7 +253,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-09-28 06:00:00"
+            "dt_txt": "28th September 6am"
         },
         {
             "dt": 1632819600,
@@ -289,7 +289,7 @@ var forecast='{
             "sys": {
                 "pod": "d"
             },
-            "dt_txt": "2021-09-28 09:00:00"
+            "dt_txt": "28th September 9am"
         },
         {
             "dt": 1632830400,
@@ -328,7 +328,7 @@ var forecast='{
             "sys": {
                 "pod": "d"
             },
-            "dt_txt": "2021-09-28 12:00:00"
+            "dt_txt": "28th September 12pm"
         },
         {
             "dt": 1632841200,
@@ -367,7 +367,7 @@ var forecast='{
             "sys": {
                 "pod": "d"
             },
-            "dt_txt": "2021-09-28 15:00:00"
+            "dt_txt": "28th September 3pm"
         },
         {
             "dt": 1632852000,
@@ -406,7 +406,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-09-28 18:00:00"
+            "dt_txt": "28th September 6pm"
         },
         {
             "dt": 1632862800,
@@ -445,7 +445,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-09-28 21:00:00"
+            "dt_txt": "28th September 9pm"
         },
         {
             "dt": 1632873600,
@@ -484,7 +484,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-09-29 00:00:00"
+            "dt_txt": "29th September 12am"
         },
         {
             "dt": 1632884400,
@@ -523,7 +523,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-09-29 03:00:00"
+            "dt_txt": "29th September 3am"
         },
         {
             "dt": 1632895200,
@@ -562,7 +562,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-09-29 06:00:00"
+            "dt_txt": "29th September 6am"
         },
         {
             "dt": 1632906000,
@@ -598,7 +598,7 @@ var forecast='{
             "sys": {
                 "pod": "d"
             },
-            "dt_txt": "2021-09-29 09:00:00"
+            "dt_txt": "29th September 9am"
         },
         {
             "dt": 1632916800,
@@ -634,7 +634,7 @@ var forecast='{
             "sys": {
                 "pod": "d"
             },
-            "dt_txt": "2021-09-29 12:00:00"
+            "dt_txt": "29th September 12pm"
         },
         {
             "dt": 1632927600,
@@ -670,7 +670,7 @@ var forecast='{
             "sys": {
                 "pod": "d"
             },
-            "dt_txt": "2021-09-29 15:00:00"
+            "dt_txt": "29th September 3pm"
         },
         {
             "dt": 1632938400,
@@ -706,7 +706,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-09-29 18:00:00"
+            "dt_txt": "29th September 6pm"
         },
         {
             "dt": 1632949200,
@@ -742,7 +742,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-09-29 21:00:00"
+            "dt_txt": "29th September 9pm"
         },
         {
             "dt": 1632960000,
@@ -778,7 +778,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-09-30 00:00:00"
+            "dt_txt": "2021-09-30 12am"
         },
         {
             "dt": 1632970800,
@@ -817,7 +817,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-09-30 03:00:00"
+            "dt_txt": "2021-09-30 3am"
         },
         {
             "dt": 1632981600,
@@ -856,7 +856,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-09-30 06:00:00"
+            "dt_txt": "2021-09-30 6am"
         },
         {
             "dt": 1632992400,
@@ -895,7 +895,7 @@ var forecast='{
             "sys": {
                 "pod": "d"
             },
-            "dt_txt": "2021-09-30 09:00:00"
+            "dt_txt": "2021-09-30 9am"
         },
         {
             "dt": 1633003200,
@@ -934,7 +934,7 @@ var forecast='{
             "sys": {
                 "pod": "d"
             },
-            "dt_txt": "2021-09-30 12:00:00"
+            "dt_txt": "2021-09-30 12pm"
         },
         {
             "dt": 1633014000,
@@ -973,7 +973,7 @@ var forecast='{
             "sys": {
                 "pod": "d"
             },
-            "dt_txt": "2021-09-30 15:00:00"
+            "dt_txt": "2021-09-30 3pm"
         },
         {
             "dt": 1633024800,
@@ -1012,7 +1012,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-09-30 18:00:00"
+            "dt_txt": "2021-09-30 6pm"
         },
         {
             "dt": 1633035600,
@@ -1048,7 +1048,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-09-30 21:00:00"
+            "dt_txt": "2021-09-30 9pm"
         },
         {
             "dt": 1633046400,
@@ -1084,7 +1084,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-10-01 00:00:00"
+            "dt_txt": "1st October 12am"
         },
         {
             "dt": 1633057200,
@@ -1120,7 +1120,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-10-01 03:00:00"
+            "dt_txt": "1st October 3am"
         },
         {
             "dt": 1633068000,
@@ -1159,7 +1159,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-10-01 06:00:00"
+            "dt_txt": "1st October 6am"
         },
         {
             "dt": 1633078800,
@@ -1195,7 +1195,7 @@ var forecast='{
             "sys": {
                 "pod": "d"
             },
-            "dt_txt": "2021-10-01 09:00:00"
+            "dt_txt": "1st October 9am"
         },
         {
             "dt": 1633089600,
@@ -1234,7 +1234,7 @@ var forecast='{
             "sys": {
                 "pod": "d"
             },
-            "dt_txt": "2021-10-01 12:00:00"
+            "dt_txt": "1st October 12pm"
         },
         {
             "dt": 1633100400,
@@ -1273,7 +1273,7 @@ var forecast='{
             "sys": {
                 "pod": "d"
             },
-            "dt_txt": "2021-10-01 15:00:00"
+            "dt_txt": "1st October 3pm"
         },
         {
             "dt": 1633111200,
@@ -1309,7 +1309,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-10-01 18:00:00"
+            "dt_txt": "1st October 6pm"
         },
         {
             "dt": 1633122000,
@@ -1345,7 +1345,7 @@ var forecast='{
             "sys": {
                 "pod": "n"
             },
-            "dt_txt": "2021-10-01 21:00:00"
+            "dt_txt": "1st October 9pm"
         },
         {
             "dt": 1633132800,
@@ -1381,7 +1381,7 @@ var forecast='{
             "sys": {
                 "pod": "d"
             },
-            "dt_txt": "2021-10-02 00:00:00"
+            "dt_txt": "2nd October 12am"
         },
         {
             "dt": 1633143600,
@@ -1417,7 +1417,7 @@ var forecast='{
             "sys": {
                 "pod": "d"
             },
-            "dt_txt": "2021-10-02 03:00:00"
+            "dt_txt": "2nd October 3am"
         },
         {
             "dt": 1633154400,
@@ -1453,7 +1453,7 @@ var forecast='{
             "sys": {
                 "pod": "d"
             },
-            "dt_txt": "2021-10-02 06:00:00"
+            "dt_txt": "2nd October 6am"
         },
         {
             "dt": 1633165200,
@@ -1489,7 +1489,7 @@ var forecast='{
             "sys": {
                 "pod": "d"
             },
-            "dt_txt": "2021-10-02 09:00:00"
+            "dt_txt": "2nd October 9am"
         }
     ],
     "city": {

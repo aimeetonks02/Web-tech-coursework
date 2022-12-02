@@ -183,8 +183,13 @@ form{
     background-color: #351431;
     color: #f6f2ff;
     padding: 2px;
+    margin: 5px;
 }
 
 .view:hover{
     background-color: #a36d90;
+}
+
+canvas{
+    margin: 5px;
 }

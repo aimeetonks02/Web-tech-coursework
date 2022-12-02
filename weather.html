@@ -33,9 +33,20 @@
         <h1>Longitude: <label id="lon"></label></h1>
 
         <div class="container">
+          <div>
             <h3>How would you like to view the graph?</h3>
-                <button class="view" onclick="changeType('line')">Line Graph</button>
-                <button class="view" onclick="changeType('bar')">Bar Chart</button>
+            <button class="view" onclick="storeType('line')">Line Graph</button>
+            <button class="view" onclick="storeType('bar')">Bar Chart</button>
+          </div>
+          <div>
+            <h3>What colour would you like the graph to be?</h3>
+            <button class="view" onclick="storeColour('pink')">Pink</button>
+            <button class="view" onclick="storeColour('red')">Red</button>
+            <button class="view" onclick="storeColour('blue')">Blue</button>
+          </div>
+          <div>
+            <button class="view" onclick="callChart()">Go</button>
+          </div>
         </div>
 
         <canvas id="myChart"></canvas>
@@ -43,23 +54,36 @@
         <script>
           var linechart = null;
           var barchart = null;
+          var colour = "pink";
           
-          function changeType(chart){
+          function storeColour(optionColour){
+            graphColour = optionColour;
+          }
+
+          function storeType(optionType){
+            graphType = optionType;
+          }
+
+          function callChart(){
+            changeType(graphType, graphColour);
+          }
+
+          function changeType(chart, colour){
             let chartStatus = Chart.getChart("myChart");
             if (chartStatus != undefined){
               chartStatus.destroy();
             }
 
             if (chart == "line"){
-              linechart = new lineGraph()
+              linechart = new lineGraph(colour)
             }
             else{
-              barchart = new barChart()  
+              barchart = new barChart(colour)  
             };
             
           }
 
-          function barChart(){
+          function barChart(colour){
             var daily = JSON.parse(dailydata_stoke);
             document.getElementById('lon').innerHTML = daily.coord.lon;
             var forecast = JSON.parse(forecast_stoke);
@@ -79,7 +103,7 @@
                 datasets: [
                   {
                     label: "Temperature",
-                    backgroundColor: "pink",
+                    backgroundColor: colour,
                     borderColor: "black",
                     data: this.temperatureList
                   }
@@ -95,35 +119,35 @@
           return barchart;}
 
 
-            function lineGraph(){
-              var daily = JSON.parse(dailydata_stoke);
-              document.getElementById('lon').innerHTML = daily.coord.lon;
-              var forecast = JSON.parse(forecast_stoke);
-              this.dateList = forecast.list.map(list => {
-                return list.dt_txt;
-              });
+          function lineGraph(colour){
+            var daily = JSON.parse(dailydata_stoke);
+            document.getElementById('lon').innerHTML = daily.coord.lon;
+            var forecast = JSON.parse(forecast_stoke);
+            this.dateList = forecast.list.map(list => {
+              return list.dt_txt;
+            });
 
-              this.temperatureList = forecast.list.map(list => {
-                return list.main.temp;
-              });
+            this.temperatureList = forecast.list.map(list => {
+              return list.main.temp;
+            });
 
-              var ctx = document.getElementById('myChart').getContext('2d');
-              linechart = new Chart(ctx, {
-                type: "line",
-                data: {
-                  labels: this.dateList,
-                  datasets: [
-                    {
-                      label: "Temperature",
-                      backgroundColor: "pink",
-                      borderColor: "purple",
-                      fill: false,
-                      data: this.temperatureList
-                    }
-                  ]
-                }
-              })
-            return linechart;}
-          </script>
+            var ctx = document.getElementById('myChart').getContext('2d');
+            linechart = new Chart(ctx, {
+              type: "line",
+              data: {
+                labels: this.dateList,
+                datasets: [
+                  {
+                    label: "Temperature",
+                    backgroundColor: "black",
+                    borderColor: colour,
+                    fill: false,
+                    data: this.temperatureList
+                  }
+                ]
+              }
+            })
+          }
+        </script>
     </body>
 </html>

@@ -5,9 +5,11 @@
         <link rel ="stylesheet" type="text/css" href="style.css">
         <script src="login.php"></script>
         <script src="logout.php"></script>
+        <script type= "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+</script>
     </head>
 
-    <body onload="check()">
+    <body>
         <div class="navbar">
             <a href="homepage.html">Home</a>
             <div class="dropdown">
@@ -23,23 +25,10 @@
             <a style="float:right" href="#">Login</a>
         </div>
 
-        <script>
-            function check(){
-                var loggedIn = "<?php echo $_SESSION; ?>";
-                if (loggedIn == true){
-                    alert("You are already logged in.");
-                    return "homepage.html";
-                }
-                else{
-                    return "#";
-                }
-            }
-
-        </script>
-
         <div id="title">
             <h1>Administrator Login</h1>
         </div>
+
         <form method="post" action="login.php">
             <div id="inputs">
                 <div>
@@ -50,8 +39,13 @@
                     <label for="password">Password</label>
                     <input class="form-control" name="password" id="password" autofocus placeholder="Enter password here">
                 </div>
+                <div>
                     <button id="yesno" type="submit">Submit</button>
                     <button id="yesno" type="reset">Reset</button>
+                </div>
+                <div>
+                    <button id = "yesno" action="logout.php" type="button">Log out</button>
+                </div>
             </div>
         </form>
     </body>
