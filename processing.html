@@ -24,5 +24,38 @@
         <div id="title">
             <h1>Publication System</h1>
         </div>
+        <h1>Add a new entry:</h1>
+        <form method="post" action="submit.php" id="submit">
+            
+            <div>
+                <div>
+                    <label for="title">Title</label>
+                    <input class="control" name="title" autofocus placeholder="Title of entry">
+                </div>
+                <div>
+                    <label for="authors">Authors</label>
+                    <input class="control" name="authors" placeholder="Please separate using '/'">
+                </div>
+                <div>
+                    <label for="year">Year</label>
+                    <input class="control" name="year" placeholder="Year of release">
+                </div>
+                <div>
+                    <label for="journal">Journal</label>
+                    <input class="control" name="journal" placeholder="Where was it released?">
+                </div>
+                <div>
+                    <label for="DOI">Digital Object Identifier</label>
+                    <input class="control" name="DOI" placeholder="Enter DOI">
+                </div>
+                <div>
+                    <label for="school">School Name</label>
+                    <input class="control" name="school" placeholder="Enter school name">
+                </div>
+                <div>
+                    <button id = "yesno" type="submit" action="submit.php">Submit</button>
+                </div>
+            </div>
+        </form>
     </body>
 </html>
