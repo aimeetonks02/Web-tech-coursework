@@ -1,9 +1,16 @@
 <?php
 $fp = fopen('data.csv', 'a');
 
-$data =$_POST;
+$list = $_POST;
 
-fputcsv($fp, $data);
+fputcsv(
+    $fp, 
+    $list,
+    $separator = ",",
+    $enclosure = "\"",
+    $escape = "\\",
+    $eol = "\n"
+);
 
 fclose($fp);
 ?>
