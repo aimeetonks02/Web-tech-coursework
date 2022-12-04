@@ -205,3 +205,8 @@ canvas{
 .control{
     width: 375px;
 }
+
+table{
+    text-align: center;
+    font-size: large;
+}
