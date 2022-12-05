@@ -14,7 +14,8 @@ $p = $_POST['password'];
 if(isset($users[$u]) and $users[$u]['password']==$p){
     $_SESSION['loggedin'] = TRUE;
     $_SESSION['username'] = $u;
-    header("Location: processing.html");
+    $_SESSION["admin"] = $users[$u]['admin'];
+    header("Location: list.php");
 }
 else{
     header("Location: login.html");

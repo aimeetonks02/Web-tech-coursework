@@ -210,3 +210,20 @@ table{
     text-align: center;
     font-size: large;
 }
+
+table, tr, td{
+    border: 2px solid #2c2b28;
+    border-collapse: collapse;
+}
+
+tr, td{
+    padding: 15px;
+}
+
+tr:nth-child(even){
+    background-color: #ffd275;
+}
+
+tr:nth-child(odd){
+    background-color: #d793bf;
+}

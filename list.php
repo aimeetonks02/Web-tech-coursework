@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,10 +25,13 @@
                 <button class="dropbtn">Processing</button>
                 <div class="dropdown-content">
                     <a href="#">See All Entries</a>
-                    <a href="processing.html">Add New Entry</a>
+                    <a href="submit.php">Add New Entry</a>
                 </div>
             </div>
             <a style="float:right" href="login.html">Login</a>
+        </div>
+        <div class="container">
+            <h1>All Database Entries</h1>
         </div>
         <?php
             echo "<html><body><center><table>\n\n";
@@ -36,7 +43,7 @@
                 foreach ($data as $i){
                     echo "<td>" . htmlspecialchars($i) . "</td>";
                 }
-                echo "\n";
+                echo "</tr> \n";
             }
 
             fclose($fp);
